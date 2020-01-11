@@ -1,1 +1,22 @@
 // Mixins in here
+
+.btn-layout (@justify, @align) {
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.btn-design (@background-color, @color, @weight, @font-size, @padding, @margin, @radius) {
+	background-color: @background-color;
+	color: @color;
+	weight: @weight;
+	font-size: @font-size;
+	padding: @padding;
+	margin: @margin;
+	border-radius: @radius;
+}
+
+.btn {
+	.btn-layout(center, center);
+	.btn-design(turquoise, #FFFFFF, bold, 1.7em, 6px, 4px, 8px);
+}

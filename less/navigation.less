@@ -1,1 +1,28 @@
 // Navigation Styles here
+
+
+#header-nav {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 5px 0;
+  }
+
+  a {
+    font-size: larger;
+    text-decoration: none;
+    color: gray;
+    margin: 0 20px 0 20px;
+
+    @media (max-width: 500px) {
+      margin: 10px;
+    }
+
+  }
+
+}

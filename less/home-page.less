@@ -1,13 +1,52 @@
 .home {
 
+  #header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0 30px 0;
+    background: #FFFFFF;
+    border-bottom: 2px dashed gray;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0 15px 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 30px;
+
+      @media (max-width: 500px) {
+        font-size: 1.3em;
+        margin-left: 0;
+      }
+    }
+
+  }
+
+  #fun-bus-container {
+    margin-bottom: 15px;
+  }
+
+  #welcome {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed gray;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+
     .text-content {
       width: 48%;
       padding-right: 1%;
