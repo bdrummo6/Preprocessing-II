@@ -186,9 +186,8 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   #header-nav {
-    flex-direction: column;
     justify-content: center;
     margin: 20px 0 5px 0;
   }
@@ -224,7 +223,7 @@ img {
   background: #FFFFFF;
   border-bottom: 2px dashed gray;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home #header-content {
     flex-direction: column;
     justify-content: center;
@@ -238,9 +237,9 @@ img {
   text-align: center;
   margin-left: 30px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home #header-content h1 {
-    font-size: 1.3em;
+    font-size: 1.8em;
     margin-left: 0;
   }
 }
@@ -257,6 +256,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -297,4 +303,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (min-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
