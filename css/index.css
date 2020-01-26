@@ -186,7 +186,7 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   #header-nav {
     justify-content: center;
     margin: 20px 0 5px 0;
@@ -223,12 +223,12 @@ img {
   background: #FFFFFF;
   border-bottom: 2px dashed gray;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home #header-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 0 15px 0;
+    padding: 5px 0 5px 0;
   }
 }
 .home #header-content h1 {
@@ -237,7 +237,7 @@ img {
   text-align: center;
   margin-left: 30px;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home #header-content h1 {
     font-size: 1.8em;
     margin-left: 0;
@@ -245,6 +245,11 @@ img {
 }
 .home #fun-bus-container {
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .home #fun-bus-container {
+    width: 100%;
+  }
 }
 .home #welcome {
   margin-bottom: 20px;
@@ -257,7 +262,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
     justify-content: center;
@@ -268,9 +273,19 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 80%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -278,6 +293,13 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -304,7 +326,12 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (min-width: 500px) {
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
     justify-content: center;
